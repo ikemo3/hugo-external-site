@@ -8,6 +8,7 @@
 
 ## サポートしているサイト
 
+* 公式サイト: `official`
 * 一般の外部サイト: `external`
 * [Wikipedia(日本語)](https://ja.wikipedia.org/)
     * 単数: `wpja`
@@ -32,13 +33,22 @@
 
 以下のように、partialを使ってください。
 
-```
-{{- partial "external-site" . }}
-```
+* 公式サイト: `{{- partial "official" . }}`
+* 外部サイト: `{{- partial "external-site" . }}`
 
 ## 記述方法
 
 Front Matterに記載します。以下は全てYAMLを使う場合の例です。
+
+### 公式サイト
+
+Front Matterに以下のように記載してください。
+
+```yaml
+official:
+  - title: "The world’s fastest framework for building websites | Hugo"
+    url: https://gohugo.io/
+```
 
 ### 一般の外部サイト
 

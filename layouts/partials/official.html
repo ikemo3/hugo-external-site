@@ -1,0 +1,8 @@
+{{- with .Params.official }}
+  <h2 id="partials-official">公式サイト</h2>
+  <ul>
+    {{- range . }}
+    <li><a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a></li>
+    {{- end }}
+  </ul>
+{{- end -}}

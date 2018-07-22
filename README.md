@@ -58,5 +58,9 @@ wpja: Linux
 wpjas: ["Linux", "Windows", "macOS"]
 ```
 
+## ライセンス
+
+MITライセンスです。
+
 [Hugo]: https://gohugo.io/
 [Theme Components]: https://gohugo.io/themes/theme-components/

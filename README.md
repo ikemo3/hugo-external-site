@@ -28,6 +28,14 @@
     * 単数: `weblio`
     * 複数: `weblios`
 
+## テンプレートへの組み込み方法
+
+以下のように、partialを使ってください。
+
+```
+{{- partial "external-site" . }}
+```
+
 ## 記述方法
 
 Front Matterに記載します。以下は全てYAMLを使う場合の例です。

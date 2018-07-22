@@ -16,11 +16,11 @@
     * 単数: `wpen`
     * 複数: `wpens`
 * [ニコニコ大百科](http://dic.nicovideo.jp/)
-    * 単数: nico
-    * 複数: nicos
+    * 単数: `nico`
+    * 複数: `nicos`
 * [ピクシブ百科事典 ](http://dic.pixiv.net/)
-    * 単数: pixiv
-    * 複数: pixivs
+    * 単数: `pixiv`
+    * 複数: `pixivs`
 * [IT用語辞典 e-Words](http://e-words.jp/)
     * 単数: `ewords`
     * 複数: `ewordss`

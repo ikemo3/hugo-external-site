@@ -10,24 +10,12 @@
 
 * 公式サイト: `official`
 * 一般の外部サイト: `external`
-* [Wikipedia(日本語)](https://ja.wikipedia.org/)
-    * 単数: `wpja`
-    * 複数: `wpjas`
-* [Wikipedia(英語)](https://en.wikipedia.org/)
-    * 単数: `wpen`
-    * 複数: `wpens`
-* [ニコニコ大百科](http://dic.nicovideo.jp/)
-    * 単数: `nico`
-    * 複数: `nicos`
-* [ピクシブ百科事典 ](http://dic.pixiv.net/)
-    * 単数: `pixiv`
-    * 複数: `pixivs`
-* [IT用語辞典 e-Words](http://e-words.jp/)
-    * 単数: `ewords`
-    * 複数: `ewordss`
-* [Weblio辞書](https://www.weblio.jp/)
-    * 単数: `weblio`
-    * 複数: `weblios`
+* [Wikipedia(日本語)](https://ja.wikipedia.org/): `wpja`
+* [Wikipedia(英語)](https://en.wikipedia.org/): `wpen`
+* [ニコニコ大百科](http://dic.nicovideo.jp/): `nico`
+* [ピクシブ百科事典 ](http://dic.pixiv.net/): `pixiv`
+* [IT用語辞典 e-Words](http://e-words.jp/): `ewords`
+* [Weblio辞書](https://www.weblio.jp/): `weblio`
 
 ## テンプレートへの組み込み方法
 
@@ -63,17 +51,19 @@ external:
 ### その他
 
 Front Matterに以下のように記載してください。
-
-単数形の場合
+(全て複数形に統一しました)
 
 ```yaml
-wpja: Linux
+wpja: ["Linux", "Windows", "macOS"]
 ```
 
-複数形の場合
+または以下のように書けます。
 
 ```yaml
-wpjas: ["Linux", "Windows", "macOS"]
+wpja:
+  - Linux
+  - Windows
+  - macOS
 ```
 
 ## ライセンス

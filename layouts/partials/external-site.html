@@ -4,58 +4,34 @@
 {{- end -}}
 
 <!-- Wikipedia(ja) -->
-{{- with .Params.wpja }} 
+{{- range .Params.wpja }} 
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Wikipedia") "URL" (print "https://ja.wikipedia.org/wiki/" . ))) }}
 {{- end }}
-
-{{- range .Params.wpjas }} 
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Wikipedia") "URL" (print "https://ja.wikipedia.org/wiki/" . ))) }}
-{{- end -}}
 
 <!-- Wikipedia(en) -->
-{{- with .Params.wpen }} 
+{{- range .Params.wpen }} 
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Wikipedia") "URL" (print "https://en.wikipedia.org/wiki/" . ))) }}
 {{- end }}
-
-{{- range .Params.wpens }} 
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Wikipedia") "URL" (print "https://en.wikipedia.org/wiki/" . ))) }}
-{{- end -}}
 
 <!-- ニコニコ大百科 -->
-{{- with .Params.nico }}
+{{- range .Params.nico }}
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - ニコニコ大百科") "URL" (print "https://dic.nicovideo.jp/a/" . ))) }}
 {{- end }}
-
-{{- range .Params.nicos }}
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - ニコニコ大百科") "URL" (print "https://dic.nicovideo.jp/a/" . ))) }}
-{{- end -}}
 
 <!-- ピクシブ百科事典 -->
-{{- with .Params.pixiv }}
+{{- range .Params.pixiv }}
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - ピクシブ百科事典") "URL" (print "https://dic.pixiv.net/a/" . ))) }}
 {{- end }}
-
-{{- range .Params.pixivs }}
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - ピクシブ百科事典") "URL" (print "https://dic.pixiv.net/a/" . ))) }}
-{{- end -}}
 
 <!-- e-Words -->
-{{- with .Params.ewords }}
+{{- range .Params.ewords }}
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - IT用語辞典") "URL" (print "http://e-words.jp/w/" . ".html"))) }}
 {{- end }}
-
-{{- range .Params.ewordss }}
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - IT用語辞典") "URL" (print "http://e-words.jp/w/" . ".html"))) }}
-{{- end -}}
 
 <!-- Weblio -->
-{{- with .Params.weblio }}
+{{- range .Params.weblio }}
   {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Weblio辞書") "URL" (print "https://www.weblio.jp/content/" . ))) }}
 {{- end }}
-
-{{- range .Params.weblios }}
-  {{- $.Scratch.Add "external" (slice (dict "Title" (print . " - Weblio辞書") "URL" (print "https://www.weblio.jp/content/" . ))) }}
-{{- end -}}
 
 <!-- 外部サイトがある場合に表示 -->
 {{- with $.Scratch.Get "external" }}
